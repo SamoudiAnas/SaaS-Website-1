@@ -1,0 +1,13 @@
+.nav__container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav__list {
+  padding: 0.75rem 0;
+}
+.nav__link {
+  color: black;
+}
+
+/*# sourceMappingURL=styles.css.map */
