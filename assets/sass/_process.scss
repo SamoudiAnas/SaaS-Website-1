@@ -1,0 +1,39 @@
+.how-it-works {
+    margin-bottom: 4rem;
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: black;
+    }
+}
+
+.step {
+    background-color: #f7f6fb;
+    padding: 3.5rem 3rem;
+    margin-top: 1.5rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+
+    &__icon {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: white;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__title {
+        color: black;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    &__description {
+        color: $default-text;
+    }
+}

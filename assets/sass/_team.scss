@@ -1,0 +1,45 @@
+.team {
+    margin-block: 6rem;
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        color: black;
+        margin-bottom: 5rem;
+    }
+}
+
+.member {
+    border: 1px solid $light-grey;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    &__picture {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: black;
+    }
+
+    &__divider {
+        @include divider;
+    }
+
+    &__role {
+        color: $blue-base;
+        font-size: 0.85rem;
+    }
+
+    &__socials {
+        @include socials;
+    }
+
+    &__desc {
+        color: $default-text;
+        margin-block: 1.5rem;
+    }
+}

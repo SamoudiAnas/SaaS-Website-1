@@ -1,0 +1,37 @@
+.footer {
+    &__logo {
+        font-weight: 900;
+        color: black;
+    }
+
+    &__links-container {
+        display: flex;
+        justify-content: space-between;
+        padding-block: 5rem;
+        border-top: 1px solid $light-grey;
+        border-bottom: 1px solid $light-grey;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+
+        &-item {
+            font-weight: 500;
+        }
+    }
+
+    &__socials {
+        @include socials;
+        gap: 0rem;
+
+        .social-icon {
+            background-color: transparent;
+        }
+    }
+
+    &__copyright {
+        font-size: 0.9rem;
+    }
+}

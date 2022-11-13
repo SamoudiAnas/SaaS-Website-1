@@ -1,0 +1,95 @@
+.open-positions {
+    margin-block: 10rem;
+
+    &__title {
+        font-weight: 600;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &__filters {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        &-item {
+            color: $default-blue;
+            padding: 0.75rem 1.25rem;
+            border-radius: 2rem;
+
+            &:hover {
+                color: white;
+                cursor: pointer;
+                background-color: $blue-base;
+            }
+
+            &.active {
+                color: white;
+                background-color: $blue-base;
+            }
+        }
+    }
+}
+
+.position {
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+    padding: 3rem 2rem;
+
+    &__title {
+        font-weight: 700;
+        margin-right: 1rem;
+    }
+
+    .btn-main {
+        display: none;
+    }
+
+    &__department {
+        font-weight: 600;
+        color: $blue-base;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        background-color: #e8efef;
+    }
+
+    &__desc {
+        color: #160042;
+        margin-bottom: 1.5rem;
+    }
+
+    &__details {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+
+            &-icon {
+                width: 2.5rem;
+                height: 2.5rem;
+                padding: 0.5rem;
+                border-radius: 50%;
+                background-color: $light-grey;
+            }
+
+            &-name {
+                font-weight: 500;
+                color: #160042;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: $box-shadow;
+    }
+
+    &:hover .btn-main {
+        display: block;
+    }
+}

@@ -1,0 +1,63 @@
+.hero {
+    text-align: center;
+    padding-block: 4rem;
+    margin-bottom: 15rem;
+
+    &__sub-title {
+        color: $cyan;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-bottom: 2rem;
+
+        span {
+            background: $default-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    &__desc {
+        color: $dark-gray;
+        margin-bottom: 2rem;
+    }
+
+    &__ctas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    &__decorations {
+        background: url("../imgs/Mesh-Grad.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+        position: relative;
+
+        &-main-img {
+            position: absolute;
+            bottom: -10rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &-second-img {
+            position: absolute;
+            top: -1rem;
+            left: 1rem;
+        }
+
+        &-third-img {
+            position: absolute;
+            top: -1rem;
+            right: 1rem;
+        }
+    }
+}
