@@ -677,11 +677,13 @@ input[type=checkbox]:checked ~ label::before {
 @media screen and (max-width: 576px) {
   .footer__links {
     flex-direction: column;
+    gap: 3rem;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .footer__links {
     flex-direction: column;
+    gap: 3rem;
   }
 }
 .footer__links-item {
