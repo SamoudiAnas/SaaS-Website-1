@@ -32,11 +32,13 @@ h6 {
   border-radius: 2rem;
   font-weight: 500;
   color: white;
+  white-space: nowrap;
 }
 
 .btn-second {
   font-weight: 500;
   display: flex;
+  white-space: nowrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -54,6 +56,7 @@ h6 {
 }
 
 .btn-learn-more {
+  white-space: nowrap;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -82,18 +85,76 @@ h6 {
   align-items: center;
   gap: 1.5rem;
 }
+@media screen and (max-width: 992px) {
+  .header__ctas {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+.header__menu {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #0022ff;
+  fill: #0022ff;
+  padding: 0.85rem;
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+}
+.header__menu:hover {
+  cursor: pointer;
+}
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 4rem;
+  flex-wrap: nowrap;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 992px) {
+  .nav {
+    position: absolute;
+    background-color: #131316;
+    left: 0;
+    right: 0;
+    top: -100%;
+    opacity: 1;
+    flex-direction: column;
+    padding: 2rem 0;
+    z-index: 99;
+  }
+  .nav.active {
+    top: 6rem;
+  }
+}
 .nav__container {
   display: flex;
   align-items: center;
   gap: 2rem;
   margin-bottom: 0;
 }
+@media screen and (max-width: 992px) {
+  .nav__container {
+    flex-direction: column;
+  }
+}
 .nav__list {
   padding: 0.75rem 0;
 }
 .nav__link {
   color: black;
+}
+@media screen and (max-width: 992px) {
+  .nav__link {
+    color: white;
+  }
 }
 
 .lang__logo-img {
@@ -118,6 +179,11 @@ h6 {
   font-weight: 800;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}
 .hero__title span {
   background: linear-gradient(98.19deg, #0047ff 2.94%, #0022ff 93.48%);
   -webkit-background-clip: text;
@@ -131,6 +197,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 .hero__decorations {
@@ -140,21 +207,63 @@ h6 {
   min-height: 60vh;
   position: relative;
 }
+@media screen and (max-width: 576px) {
+  .hero__decorations {
+    min-height: 45vh;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .hero__decorations {
+    min-height: 40vh;
+  }
+}
 .hero__decorations-main-img {
   position: absolute;
   bottom: -10rem;
   left: 50%;
   transform: translateX(-50%);
 }
+@media screen and (max-width: 576px) {
+  .hero__decorations-main-img {
+    width: 25rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .hero__decorations-main-img {
+    width: 25rem;
+  }
+}
 .hero__decorations-second-img {
   position: absolute;
   top: -1rem;
   left: 1rem;
 }
+@media screen and (max-width: 576px) {
+  .hero__decorations-second-img {
+    width: 8rem;
+    left: -2rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .hero__decorations-second-img {
+    width: 10rem;
+  }
+}
 .hero__decorations-third-img {
   position: absolute;
   top: -1rem;
   right: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .hero__decorations-third-img {
+    width: 12rem;
+    right: -2rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .hero__decorations-third-img {
+    width: 15rem;
+  }
 }
 
 .services {
@@ -220,8 +329,20 @@ h6 {
 }
 .goal__decoration {
   position: absolute;
-  top: -4rem;
+  top: -8rem;
   right: 2rem;
+  width: 20rem;
+}
+@media screen and (max-width: 768px) {
+  .goal__decoration {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .goal__decoration {
+    width: 15rem;
+    top: -8rem;
+  }
 }
 
 .open-positions {
@@ -235,6 +356,7 @@ h6 {
 .open-positions__filters {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -279,6 +401,7 @@ h6 {
 .position__details {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
 }
 .position__details-item {
@@ -341,15 +464,40 @@ h6 {
   color: #4f4f4f;
 }
 
+.testimonials__img {
+  width: 100%;
+}
 .testimonials__title {
   font-size: 3rem;
   color: black;
   font-weight: 600;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .testimonials__title {
+    font-size: 2.5rem;
+  }
+}
 .testimonials__text-content {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .testimonials__text-content {
+    font-size: 1.5rem;
+  }
+}
+.testimonials__owner-name {
+  color: #131316;
+}
+.testimonials__owner-divider {
+  width: 1px;
+  background-color: #e7eaee;
+  height: 10px;
+  margin-inline: 0.5rem;
+}
+.testimonials__owner-occupation {
+  color: #acb4c3;
 }
 
 .team {
@@ -366,6 +514,7 @@ h6 {
   border: 1px solid #e7eaee;
   border-radius: 1rem;
   padding: 2rem;
+  margin-top: 1.5rem;
 }
 .member__picture {
   width: 100%;
@@ -375,6 +524,11 @@ h6 {
   font-size: 1.5rem;
   font-weight: 600;
   color: black;
+}
+@media screen and (max-width: 576px) {
+  .member__name {
+    font-size: 1.15rem;
+  }
 }
 .member__divider {
   width: 1px;
@@ -408,6 +562,9 @@ h6 {
 
 .contact {
   margin-block: 10rem;
+}
+.contact__img {
+  width: 100%;
 }
 .contact__title {
   font-weight: 800;
@@ -488,6 +645,12 @@ input[type=checkbox]:checked ~ label::before {
   font-weight: 900;
   color: black;
 }
+@media screen and (max-width: 992px) {
+  .footer__logo {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
 .footer__links-container {
   display: flex;
   justify-content: space-between;
@@ -495,10 +658,31 @@ input[type=checkbox]:checked ~ label::before {
   border-top: 1px solid #e7eaee;
   border-bottom: 1px solid #e7eaee;
 }
+@media screen and (max-width: 576px) {
+  .footer__links-container {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .footer__links-container {
+    flex-direction: column;
+  }
+}
 .footer__links {
   display: flex;
   align-items: center;
   gap: 6rem;
+  padding: 0;
+}
+@media screen and (max-width: 576px) {
+  .footer__links {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .footer__links {
+    flex-direction: column;
+  }
 }
 .footer__links-item {
   font-weight: 500;
@@ -524,6 +708,7 @@ input[type=checkbox]:checked ~ label::before {
 }
 .footer__copyright {
   font-size: 0.9rem;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

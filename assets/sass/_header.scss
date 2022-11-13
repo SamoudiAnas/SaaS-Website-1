@@ -8,15 +8,66 @@
         display: flex;
         align-items: center;
         gap: 1.5rem;
+
+        @media screen and (max-width: 992px) {
+            justify-content: center;
+            margin-top: 2rem;
+        }
+    }
+
+    &__menu {
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid $default-blue;
+        fill: $default-blue;
+        padding: 0.85rem;
+        display: none;
+
+        @media screen and (max-width: 992px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 4rem;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease;
+
+    @media screen and (max-width: 992px) {
+        position: absolute;
+        background-color: $black;
+        left: 0;
+        right: 0;
+        top: -100%;
+        opacity: 1;
+        flex-direction: column;
+        padding: 2rem 0;
+        z-index: 99;
+
+        &.active {
+            top: 6rem;
+        }
+    }
+
     &__container {
         display: flex;
         align-items: center;
         gap: 2rem;
         margin-bottom: 0;
+
+        @media screen and (max-width: 992px) {
+            flex-direction: column;
+        }
     }
 
     &__list {
@@ -25,6 +76,10 @@
 
     &__link {
         color: black;
+
+        @media screen and (max-width: 992px) {
+            color: white;
+        }
     }
 }
 

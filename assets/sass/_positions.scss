@@ -10,6 +10,7 @@
     &__filters {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 1rem;
         margin-bottom: 2rem;
 
@@ -62,6 +63,7 @@
     &__details {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         gap: 1.5rem;
 
         &-item {
