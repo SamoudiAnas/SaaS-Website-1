@@ -1,6 +1,6 @@
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
-let smoother = ScrollSmoother.create({
-  smooth: 1.2,
-  effects: true,
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,
+  tablet: { smooth: true },
+  smartphone: { smooth: true },
 });
